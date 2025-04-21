@@ -1,0 +1,183 @@
+[gd_scene load_steps=36 format=3 uid="uid://bvjvne13awtra"]
+
+[ext_resource type="Texture2D" uid="uid://1qahfp87qxd6" path="res://ART KIRBY/kirby cayendo1.png" id="1_voxtd"]
+[ext_resource type="Texture2D" uid="uid://smbjma8f5xnr" path="res://ART KIRBY/kirby cayendo2.png" id="2_mj4mn"]
+[ext_resource type="Texture2D" uid="uid://crteipskqpsc5" path="res://ART KIRBY/kirby cayendo3.png" id="3_hm1vx"]
+[ext_resource type="Texture2D" uid="uid://dti25lc5v8xup" path="res://ART KIRBY/kirby estatico.png" id="4_5mjlm"]
+[ext_resource type="Texture2D" uid="uid://cijuvw4qp2vg1" path="res://ART KIRBY/kirby saltando1.png" id="5_8s2jg"]
+[ext_resource type="Texture2D" uid="uid://bchkfytm2gcag" path="res://ART KIRBY/kirby saltando2.png" id="6_68vs3"]
+[ext_resource type="Texture2D" uid="uid://ma57q87pt8f" path="res://ART KIRBY/kirby saltando3.png" id="7_mqyt1"]
+[ext_resource type="Texture2D" uid="uid://ciwqnokq57wf1" path="res://ART KIRBY/kirby saltando4.png" id="8_rsuq5"]
+[ext_resource type="Texture2D" uid="uid://b2vuj4tmwxho" path="res://ART KIRBY/kirby saltando5.png" id="9_pxkn6"]
+[ext_resource type="Texture2D" uid="uid://bkjdtj5nckvx5" path="res://ART KIRBY/kirby saltando6.png" id="10_1wkb2"]
+[ext_resource type="Texture2D" uid="uid://472fkigxm5gu" path="res://ART KIRBY/kirby saltando7.png" id="11_khcf6"]
+[ext_resource type="Texture2D" uid="uid://cyljacqfelj61" path="res://ART KIRBY/kirby saltando8.png" id="12_aknvb"]
+[ext_resource type="Texture2D" uid="uid://cxev10n42udwe" path="res://ART KIRBY/kirby saltando9.png" id="13_q3wrb"]
+[ext_resource type="Texture2D" uid="uid://f8qd6c7h7x8c" path="res://ART KIRBY/kirby corriendo derecha1.png" id="14_sip1n"]
+[ext_resource type="Texture2D" uid="uid://cx0uxnq3ei2xh" path="res://ART KIRBY/kirby corriendo derecha2.png" id="15_0quny"]
+[ext_resource type="Texture2D" uid="uid://pprbe5tbme3e" path="res://ART KIRBY/kirby corriendo derecha3.png" id="16_p75fy"]
+[ext_resource type="Texture2D" uid="uid://cpjf4e1cpvcsf" path="res://ART KIRBY/kirby corriendo derecha4.png" id="17_m5xf2"]
+[ext_resource type="Texture2D" uid="uid://ptf2jjqb8rmw" path="res://ART KIRBY/kirby corriendo derecha5.png" id="18_sp31w"]
+[ext_resource type="Texture2D" uid="uid://ut5wy7y11uh" path="res://ART KIRBY/kirby corriendo derecha6.png" id="19_ajri6"]
+[ext_resource type="Texture2D" uid="uid://c0fc33gafpq6t" path="res://ART KIRBY/kirby corriendo derecha7.png" id="20_hkwga"]
+[ext_resource type="Texture2D" uid="uid://nmboscfhfrbc" path="res://ART KIRBY/kirby corriendo derecha8.png" id="21_xkc6x"]
+[ext_resource type="Texture2D" uid="uid://hify221klg8p" path="res://ART KIRBY/sprite kirby caminando derecha1.png" id="22_hr475"]
+[ext_resource type="Texture2D" uid="uid://dlbqqlqy1jj8n" path="res://ART KIRBY/sprite kirby caminando derecha2.png" id="23_2r2vw"]
+[ext_resource type="Texture2D" uid="uid://dus7xy4dcds8x" path="res://ART KIRBY/sprite kirby caminando derecha3.png" id="24_hqg2b"]
+[ext_resource type="Texture2D" uid="uid://brlunan0o763c" path="res://ART KIRBY/sprite kirby caminando derecha4.png" id="25_tahda"]
+[ext_resource type="Texture2D" uid="uid://c006ep3jmrqjn" path="res://ART KIRBY/sprite kirby caminando derecha5.png" id="26_aoesi"]
+[ext_resource type="Texture2D" uid="uid://beqhbtxlq0gqy" path="res://ART KIRBY/sprite kirby caminando derecha6.png" id="27_x1fnt"]
+[ext_resource type="Texture2D" uid="uid://dglqvfa6nhybs" path="res://ART KIRBY/sprite kirby caminando derecha7.png" id="28_a682m"]
+[ext_resource type="Texture2D" uid="uid://t2df648qukur" path="res://ART KIRBY/sprite kirby caminando derecha8.png" id="29_0xwi3"]
+[ext_resource type="Texture2D" uid="uid://cwd58uqttvrfj" path="res://ART KIRBY/sprite kirby caminando derecha9.png" id="30_cg8ns"]
+[ext_resource type="Texture2D" uid="uid://5ad4nddubf2q" path="res://ART KIRBY/sprite kirby caminando derecha10.png" id="31_4pjtg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c731q"]
+radius = 16.0
+height = 38.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcfdb"]
+atlas = ExtResource("4_5mjlm")
+region = Rect2(0, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdpoa"]
+atlas = ExtResource("4_5mjlm")
+region = Rect2(48, 0, 48, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jwxfv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_voxtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mj4mn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hm1vx")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gcfdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdpoa")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8s2jg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_68vs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mqyt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rsuq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pxkn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1wkb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_khcf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_aknvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q3wrb")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_sip1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0quny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_p75fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_m5xf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_sp31w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ajri6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hkwga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_xkc6x")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_hr475")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2r2vw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_hqg2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_tahda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_aoesi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_x1fnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_a682m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0xwi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_cg8ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_4pjtg")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(174, 514)
+shape = SubResource("CapsuleShape2D_c731q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(174, 513)
+scale = Vector2(1, 0.970588)
+sprite_frames = SubResource("SpriteFrames_jwxfv")
+animation = &"fall"
+frame_progress = 0.701963
