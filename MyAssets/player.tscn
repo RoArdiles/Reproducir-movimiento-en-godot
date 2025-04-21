@@ -182,7 +182,7 @@ position = Vector2(174, 513)
 scale = Vector2(1, 0.970588)
 sprite_frames = SubResource("SpriteFrames_jwxfv")
 animation = &"walk"
-frame_progress = 0.0201
+frame_progress = 0.583524
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(573, 322)
