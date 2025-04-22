@@ -182,11 +182,8 @@ position = Vector2(177, 563)
 scale = Vector2(1, 0.970588)
 sprite_frames = SubResource("SpriteFrames_jwxfv")
 animation = &"fall"
-frame_progress = 0.277584
+frame_progress = 0.46457
 
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(570, 324)

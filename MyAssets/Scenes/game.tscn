@@ -29,3 +29,6 @@ show_behind_parent = true
 position = Vector2(576.25, 342.25)
 scale = Vector2(0.600781, 0.636574)
 texture = ExtResource("2_x0vpd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 322)
