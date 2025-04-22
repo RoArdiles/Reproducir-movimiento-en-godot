@@ -1,10 +1,12 @@
 extends CharacterBody2D
 
-
+const ACCELERATION_STEP = 100.0
+const DECELERATION_STEP = 150.0
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 var jump_count = 0
+var current_speed = 0.0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -30,13 +32,18 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
 	
-	if direction:
-		velocity.x = direction * SPEED
+	if direction !=0:
+		current_speed = min(current_speed + ACCELERATION_STEP * delta, SPEED)
+		velocity.x = direction * current_speed
 		if is_on_floor():
-			$AnimatedSprite2D.play("run")
+			$AnimatedSprite2D.play("walk")
 			$AnimatedSprite2D.flip_h = direction < 0
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		current_speed = max(current_speed - DECELERATION_STEP * delta, 0)
+		velocity.x = move_toward(velocity.x, 0, DECELERATION_STEP * delta)
 		if is_on_floor():
 			$AnimatedSprite2D.play("idle")
+		
 	move_and_slide()
+	$Label.text = "Velocidad: %.2f" % velocity.length()
+	

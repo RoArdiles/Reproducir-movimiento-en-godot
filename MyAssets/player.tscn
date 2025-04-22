@@ -173,16 +173,20 @@ animations = [{
 script = ExtResource("1_mj4mn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(174, 514)
+position = Vector2(174, 565)
 shape = SubResource("CapsuleShape2D_c731q")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(174, 513)
+position = Vector2(177, 563)
 scale = Vector2(1, 0.970588)
 sprite_frames = SubResource("SpriteFrames_jwxfv")
-animation = &"walk"
-frame_progress = 0.583524
+animation = &"fall"
+frame_progress = 0.277584
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(573, 322)
+position = Vector2(570, 324)
